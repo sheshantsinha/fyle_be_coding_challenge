@@ -12,9 +12,9 @@ This file have 2 curl command which will fetch data.
 
 Requirements for api_py.py
 
-1)Postgres library (psycopg2)
+1) Postgres library (psycopg2)
 
-2)Flask (flask)
+2) Flask (flask)
 
 3) nohup to run the server in background
 
