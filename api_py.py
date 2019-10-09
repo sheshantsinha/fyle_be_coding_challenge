@@ -30,7 +30,8 @@ def connect():
 
 def on_exception():
     result = {'title': 'Visit any of the two url',
-              'url1': 'http://172.105.39.232:5000/api/branches/autocomplete?q=<>',
+              'url1': 'http://172.105.39.232:5000/api/branches\
+              /autocomplete?q=<>',
               'url2': 'http://172.105.39.232:5000/api/branches?q=<>'}
     return result
 
@@ -40,7 +41,8 @@ def query_auto(q, limit, offset):
     (connection, cursor) = connect()
 
     postgres_insert_query = \
-        'SELECT * FROM indian_banks WHERE branch ILIKE (%s) order by ifsc asc LIMIT (%s) '
+        'SELECT * FROM indian_banks WHERE branch ILIKE (%s)\
+         order by ifsc asc LIMIT (%s) '
 
     pattern = '%{}%'.format(q)
     cursor.execute(postgres_insert_query, (pattern, limit + offset))
@@ -60,7 +62,10 @@ def search_all_query(q, limit, offset):
     (connection, cursor) = connect()
 
     postgres_insert_query = \
-        'SELECT * FROM indian_banks WHERE branch ILIKE (%s) or ifsc ILIKE (%s) or city ILIKE (%s) or state ILIKE (%s) or district ILIKE (%s) or address ILIKE (%s)  order by ifsc asc LIMIT (%s) '
+        'SELECT * FROM indian_banks WHERE branch ILIKE (%s)\
+        or ifsc ILIKE (%s) or city ILIKE (%s) or state ILIKE\
+        (%s) or district ILIKE (%s) or address ILIKE (%s)\
+        order by ifsc asc LIMIT (%s) '
 
     pattern = '%{}%'.format(q)
     temp = (
