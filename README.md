@@ -1,5 +1,7 @@
 # fyle_be_coding_challenge
-Fyle Backend engineering coding challenge
+Fyle Backend engineering coding challenge.
+
+Host Url: http://172.105.39.232:5000
 
 This repo contain 2 files.
 1) api_py.py (**This file is responsible for connecting with postgres database and fetch data on the basis of query.**)
