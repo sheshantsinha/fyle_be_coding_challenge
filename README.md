@@ -2,13 +2,9 @@
 Fyle Backend engineering coding challenge
 
 This repo contain 2 files.
-1) api_py.py 
+1) api_py.py (**This file is responsible for connecting with postgres database and fetch data on the basis of query.**)
 
-This file is responsible for connecting with postgres database and fetch data on the basis of query.
-
-2)bank_detail.sh
-
-This file have 2 curl command which will fetch data.
+2) bank_detail.sh (**This file have 2 curl command which will fetch data.**)
 
 Requirements for api_py.py
 
