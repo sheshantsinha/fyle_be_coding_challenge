@@ -3,10 +3,17 @@ Fyle Backend engineering coding challenge.
 
 Host Url: http://172.105.39.232:5000
 
-This repo contain 2 files.
-1) api_py.py (**This file is responsible for connecting with postgres database and fetch data on the basis of query.**)
+Steps to execute:-
+1) sudo chmod 755 run.sh
 
-2) bank_detail.sh (**This file have 2 curl command which will fetch data.**)
+2) nohup ./run.sh &
+
+This repo contain 3 files.
+1) run.sh (**This file will execute python api_py.py by passing 3 variable $user, $password, $database**)
+
+2) api_py.py (**This file is responsible for connecting with postgres database and fetch data on the basis of query.**)
+
+3) bank_detail.sh (**This file have 2 curl command which will fetch data.**)
 
 Requirements for api_py.py
 
