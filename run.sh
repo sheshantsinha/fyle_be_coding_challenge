@@ -1,0 +1,1 @@
+python api_py.py $user $password $database
