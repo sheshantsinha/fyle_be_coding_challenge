@@ -30,6 +30,4 @@ ifsc | state | city | bank_id | branch | address | district
 
 Total data in table =127857
 
-**Note**:- I have hosted this project on linode because i am very new to heroku and tried there to create all the requirements but fails and it was wasting my time.
-
-After evaluation or every thing done from your side, please revert me back ASAP because i have to close this linode server.
+**Note**:- Project hosted on Linode
